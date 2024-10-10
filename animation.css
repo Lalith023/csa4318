@@ -1,0 +1,18 @@
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

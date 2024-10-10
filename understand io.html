@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input and Output Program</title>
+ </head>
+<body>
+    <h1>Input and Output Program</h1>
+    <p>Enter a number: <input type="number" id="num" /></p>
+    <button onclick="displayOutput()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        function displayOutput() {
+            let num = document.getElementById("num").value;
+            let output = parseInt(num) * 2;
+            document.getElementById("output").innerHTML = "The output is: " + output;
+        }
+    </script>
+</body>
+</html>
