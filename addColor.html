@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Example</title>
+	<style>
+		/* Method 1: Using hex code */
+		.hex-color {
+			color: #FF0000; /* red */
+		}
+		
+		/* Method 2: Using RGB values */
+		.rgb-color {
+			color: rgb(0, 255, 0); /* green */
+		}
+		
+		/* Method 3: Using RGBA values (with transparency) */
+		.rgba-color {
+			color: rgba(0, 0, 255, 0.5); /* blue with 50% transparency */
+		}
+		
+		/* Method 4: Using HSL values */
+		.hsl-color {
+			color: hsl(120, 100%, 50%); /* green */
+		}
+		
+		/* Method 5: Using HSLA values (with transparency) */
+		.hsla-color {
+			color: hsla(240, 100%, 50%, 0.5); /* blue with 50% transparency */
+		}
+		
+		/* Method 6: Using color names */
+		.color-name {
+			color: orange; /* orange */
+		}
+		
+		/* Method 7: Using CSS variables */
+		:root {
+			--primary-color: #0099FF; /* blue */
+		}
+		.css-var-color {
+			color: var(--primary-color); /* blue */
+		}
+	</style>
+</head>
+<body>
+	<p class="hex-color">This text is red (hex code)</p>
+	<p class="rgb-color">This text is green (RGB values)</p>
+	<p class="rgba-color">This text is blue with 50% transparency (RGBA values)</p>
+	<p class="hsl-color">This text is green (HSL values)</p>
+	<p class="hsla-color">This text is blue with 50% transparency (HSLA values)</p>
+	<p class="color-name">This text is orange (color name)</p>
+	<p class="css-var-color">This text is blue (CSS variable)</p>
+</body>
+</html>
