@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onclick Event Handling</title>
+    <style>
+        /* Add some basic styling to the page */
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML elements -->
+    <p id="myElement" style="color: blue; font-size: 18px;">Click me to change my style!</p>
+    <input id="num1" type="number" value="0">
+    <input id="num2" type="number" value="0">
+    <button id="calculateButton">Calculate</button>
+    <p id="result"></p>
+
+    <!-- JavaScript code -->
+    <script>
+        // Get the HTML elements
+        var elem = document.getElementById("myElement");
+        var num1Input = document.getElementById("num1");
+        var num2Input = document.getElementById("num2");
+        var resultElem = document.getElementById("result");
+        var calculateButton = document.getElementById("calculateButton");
+
+        // Add event listener to the element
+        elem.addEventListener("click", function() {
+            // a) Change the style of the HTML element
+            elem.style.color = "red";
+            elem.style.fontSize = "24px";
+        });
+
+        calculateButton.addEventListener("click", function() {
+            // b) Change the HTML element attribute value
+            num1Input.setAttribute("value", "10");
+
+            // c) Perform Calculation
+            var num1 = parseInt(num1Input.value);
+            var num2 = parseInt(num2Input.value);
+            var result = num1 + num2;
+            resultElem.innerHTML = "Result: " + result;
+        });
+    </script>
+</body>
+</html>
